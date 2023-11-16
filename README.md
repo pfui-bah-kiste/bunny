@@ -2,7 +2,7 @@
 
 This is a template for [Bun](https://bun.sh) projects with eslint support.
 
-Run `bun install` or `bun i` to install dependencies from `package.json`. Scripts can be run with `bun run <script>` similar to its npm counterpart `npm run <script>`.
+Run `bun install` or `bun i` to install dependencies from `package.json`. Scripts can be run with `bun run <script>` similar to the npm counterpart command `npm run <script>`.
 
 ## Install
 
@@ -15,7 +15,7 @@ curl -fsSL https://bun.sh/install | bash
 ## Error Checking and Testing
 
 To check the project for errors, run `lint` (eslint rules) or `tsc` (typescript type checking), or both together with `check`. All other scripts depend on `check` and will run it before executing.
-In order to execute unit tests, run `test`, which automatically executes all tests found in files with the extensions `[.|_][test|spec].[ts|tsx]`.
+In order to execute unit tests, run `test`, which automatically executes all defined tests in all files matching the extension pattern `[.|_][test|spec].[ts|tsx]`.
 
 ## Start and Watch
 
