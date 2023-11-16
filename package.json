@@ -1,0 +1,32 @@
+{
+    "name": "bunny",
+    "version": "0.0.1",
+    "private": "true",
+    "module": "index.ts",
+    "type": "module",
+    "scripts": {
+        "lint":          "eslint src/**",
+        "tsc":           "tsc -p tsconfig.json",
+        "check":         "bun run lint && bun run tsc",
+        "test":          "bun run check && bun test",
+        "start":         "bun run check && bun src/index.ts",
+        "start:inspect": "bun run check && bun --inspect src/index.ts",
+        "watch":         "bun run check && bun --watch src/index.ts",
+        "watch:hot":     "bun run check && bun --hot src/index.ts",
+        "compile":       "bun run check && bun build src/index.ts --outfile dist/index --compile",
+        "build:bun":     "bun run check && bun build src/index.ts --outdir dist --target bun",
+        "build:bun:min": "bun run build:bun -- --minify --sourcemap=external",
+        "build:web":     "bun run check && bun build src/index.ts --outdir dist --target browser",
+        "build:web:min": "bun run build:web -- --minify --sourcemap=external"
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "eslint": "8.48.0",
+        "eslint-plugin-jsdoc": "46.5.0",
+        "@typescript-eslint/eslint-plugin": "6.5.0",
+        "@typescript-eslint/parser": "6.5.0"
+    },
+    "peerDependencies": {
+        "typescript": "5.2.2"
+    }
+}
