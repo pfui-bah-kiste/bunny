@@ -1,0 +1,25 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "eslint-plugin-jsdoc"
+    ],
+    "extends": [
+        "./eslintrc/.eslintrc.json"
+    ],
+    "ignorePatterns": [
+        "dist/"
+    ],
+    "globals": {
+        "Bun": "readonly"
+    }
+}
