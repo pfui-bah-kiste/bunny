@@ -10,6 +10,7 @@
         "project": "tsconfig.json"
     },
     "plugins": [
+        "@stylistic",
         "@typescript-eslint",
         "eslint-plugin-jsdoc"
     ],
